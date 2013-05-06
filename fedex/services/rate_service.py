@@ -32,7 +32,7 @@ class FedexRateServiceRequest(FedexBaseService):
         """@ivar: Holds the RequestedShipment WSDL object."""
         # Call the parent FedexBaseService class for basic setup work.
         super(FedexRateServiceRequest, self).__init__(self._config_obj, 
-                                                         'RateService_v8.wsdl',
+                                                         'RateService_v13.wsdl',
                                                          *args, **kwargs)
         self.ClientDetail.Region = config_obj.express_region_code
         
